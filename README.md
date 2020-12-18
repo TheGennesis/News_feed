@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# News_Feed
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Intro
+This is my first web application, built with React.js and Node.js. It's a simple news aggregator which allows the user to read hundreds of articles, divided in 7 different categories, published by the major newspapers of 52 Countries in the world.
 
-## Available Scripts
+## External resources
+- The web application uses the NewsAPI HTTP REST API (base version with 100 calls per day) for searching and retrieving the articles. Link here "https://newsapi.org/"
+- All the icons are taken from: "https://fontawesome.com/icons?d=gallery"
+- The background image is taken from: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F254946028887399529%2F&psig=AOvVaw2SvmjYWhfCm47_yAzN3QuJ&ust=1608402406362000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCPCz2JuU2O0CFQAAAAAdAAAAABAY"
 
-In the project directory, you can run:
 
-### `npm start`
+## Technologies
+I decided to use the following technologies for developing the web application:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Node.js Framework
+I created a base server that receives the requests from the front-end, makes the calls to the News API and then sends back the data to the fron-end in json format. All the libraries imported:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- express 
+- axios 
+- cors 
+- dotenv
+- nodemon
 
-### `npm test`
+#### React.js Library
+I used functional components and React Hooks to create the building blocks of my website. All the libraries imported:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- axios
+- bootstrap
+- react-bootstrap
+- emoji-flags
+- react-alert
+- react-alert-template-oldschool-dark
+- react-emojione
+- react-router-dom
+- react-uuid
+- use-route-as-state
 
-### `npm run build`
+#### localStorage
+In order to avoid a large number of requests to the News API and to store the Country selected, I decided to save temporarily (at least 2 hours) the pages that the user has visited in the localStorage.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to start the application
+Using the VS Code editor, you have to create two instances of the terminal: 
+- the first one is for the backend server: type "cd backend" and then "npm run server". A message will be displayed in the console.
+- the second one is for the frontend side: type "npm start" for running the react script. A new browser window will be opened.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Screenshots
+![main](https://user-images.githubusercontent.com/62058037/102647487-16cdfc80-4166-11eb-9a18-9a2735e45a68.PNG)
 
-### `npm run eject`
+![countries](https://user-images.githubusercontent.com/62058037/102647493-1a618380-4166-11eb-87df-dc6913bb9d54.PNG)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![demo](https://user-images.githubusercontent.com/62058037/102648667-2e0de980-4168-11eb-930b-9a32d573b4e1.gif)
