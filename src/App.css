@@ -1,0 +1,82 @@
+@import "https://use.typekit.net/pmq3hhf.css";
+
+body {
+    background-color: #343a40 !important;
+    background-image: url('C:/Users/rinos/OneDrive/Desktop/progetti/react/web/news-feed/src/background.jpg');
+    font-family: alibaba-sans, sans-serif !important;
+}
+
+#navbar {
+    background: rgba(52, 58, 64, 0.8) !important;
+}
+
+.config-container {
+    color: white;
+    border-radius: 15px;
+    border: 1px solid white;
+    background: rgba(52, 58, 64, 0.8);
+}
+
+.config-btn {
+    background-color: #75B0EB !important;
+    color: black !important;
+}
+
+.config-btn:hover {
+    background-color: #99CCFF !important;
+}
+
+.divider {
+    background-color: white;
+}
+
+.news-card {
+    background: rgba(52, 58, 64, 0.8) !important; 
+    color: white !important; 
+    height: 100% !important; 
+    border-radius: 15px !important;
+    border: 1px solid white !important;
+}
+
+.header-card {
+    border-bottom: 1px solid white !important;
+}
+
+.header-card .title {
+    color: #7ac3ff !important;
+    font-weight: bold;
+}
+
+.footer-card {
+    border-top: 1px solid white !important;
+}
+
+.image-card {
+    max-width: 100%;
+    height: auto;
+}
+
+.news-link {
+    color: #7ac3ff;
+}
+
+.news-link:hover {
+    color: #99CCFF;
+}
+/* per personalizzare la scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgb(200,200,200,1);
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgb(200,200,200,1);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color:#75B0EB;
+    -webkit-box-shadow:rgb(90,90,90,0.7);
+    box-shadow:rgb(90,90,90,0.7);
+  }
