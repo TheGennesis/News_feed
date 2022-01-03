@@ -38,12 +38,6 @@ I used functional components and React Hooks to create the building blocks of my
 #### localStorage
 In order to avoid a large number of requests to the News API and to store the Country selected, I decided to save temporarily (at least 2 hours) the pages that the user has visited in the localStorage.
 
-
-## How to start the application
-Using the VS Code editor, you have to create two instances of the terminal: 
-- the first one is for the backend server: type "cd backend" and then "npm run server". A message will be displayed in the console.
-- the second one is for the frontend side: type "npm start" for running the react script. A new browser window will be opened.
-
 ## Screenshots
 ![main](https://user-images.githubusercontent.com/62058037/102647487-16cdfc80-4166-11eb-9a18-9a2735e45a68.PNG)
 
